@@ -172,9 +172,7 @@ fun HomeScreen(navController: NavHostController) {
     val homeScreenData = listOf("${AppScreen.Profile.route}/profile_001", "${AppScreen.Profile.route}/profile_002")
     LazyColumn {
         itemsIndexed(homeScreenData) { _, route ->
-            TextButton(onClick = {
-                    navController.navigate(route)
-            }) {
+            TextButton(onClick = { /*TODO*/ }) {
             Text(text = route)
             }
 
